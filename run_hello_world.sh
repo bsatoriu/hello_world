@@ -30,3 +30,8 @@ if [ "$#" -eq 1 ]; then
     mv output.jpg ${id}/output.jpg
 fi
 
+if [ "$#" -eq 2 ]; then
+    python $BASE_PATH/Catify.py $1 $2
+    mv output.jpg ${id}/output.jpg
+fi
+
