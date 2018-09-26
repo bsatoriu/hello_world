@@ -26,7 +26,7 @@ metadata_json_file=${id}/${id}.met.json
 echo "{}" > $metadata_json_file
 
 if [ "$#" -eq 1 ]; then
-    python $BASE_PATH/Catify.py $1
+    python $BASE_PATH/Catify.py "$BASE_PATH/fatcat.jpg" $1
     mv output.jpg ${id}/output.jpg
 fi
 
