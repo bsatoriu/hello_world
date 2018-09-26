@@ -19,7 +19,7 @@ dd if=/dev/urandom of=$fake_data_file bs=1M count=5
 
 # create minimal dataset JSON file
 dataset_json_file=${id}/${id}.dataset.json
-echo "{\"version\": \"v1.0\"}" > $dataset_json_file
+echo "{\"version\": \"v1.1\"}" > $dataset_json_file
 
 # create minimal metadata file
 metadata_json_file=${id}/${id}.met.json
