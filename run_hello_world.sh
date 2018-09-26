@@ -26,3 +26,5 @@ metadata_json_file=${id}/${id}.met.json
 echo "{}" > $metadata_json_file
 
 python $BASE_PATH/Catify.py
+
+mv output.jpg ${id}/output.jpg
