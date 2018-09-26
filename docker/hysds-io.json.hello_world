@@ -1,10 +1,13 @@
 {
-  "label": "Hello World",
+  "label": "Catify",
+  "component":"tosca",
+  "submission_type":"individual",
   "params": [
     {
       "name": "base_image_url",
-      "from": "value",
-      "value": "https://vignette.wikia.nocookie.net/the-martian/images/f/f9/JPL.jpg"
+      "placeholder": "a full url to a base JPG image",
+      "from": "submitter",
+      "type": "text"
     }
   ]
 }
