@@ -6,9 +6,9 @@ import sys
 def main():
 
     img_base = 'input.jpg'
-    img_overlay = 'fatcat.jpg'
+    img_overlay = sys.argv[1:][0]
     img_composite = 'output.jpg'
-    image_url = sys.argv[1:][0]
+    image_url = sys.argv[1:][1]
     img_data = requests.get(image_url).content
     with open(img_base, 'wb') as handler:
         handler.write(img_data)
