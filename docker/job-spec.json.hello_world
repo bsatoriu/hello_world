@@ -1,5 +1,10 @@
 {
   "command": "/home/ops/verdi/ops/hello_world/run_hello_world.sh",
   "recommended-queues": [ "factotum-job_worker-small" ],
-  "params": []
+  "params": [
+    {
+      "name": "base_image_url",
+      "destination": "positional"
+    }
+  ]
 }

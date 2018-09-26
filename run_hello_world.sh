@@ -25,6 +25,8 @@ echo "{\"version\": \"v1.1\"}" > $dataset_json_file
 metadata_json_file=${id}/${id}.met.json
 echo "{}" > $metadata_json_file
 
-python $BASE_PATH/Catify.py
+if [ "$#" -eq 1 ]; then
+    python $BASE_PATH/Catify.py $1
+    mv output.jpg ${id}/output.jpg
+fi
 
-mv output.jpg ${id}/output.jpg

@@ -1,4 +1,10 @@
 {
   "label": "Hello World",
-  "params": []
+  "params": [
+    {
+      "name": "base_image_url",
+      "from": "value",
+      "value": "https://vignette.wikia.nocookie.net/the-martian/images/f/f9/JPL.jpg"
+    }
+  ]
 }
