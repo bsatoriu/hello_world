@@ -5,8 +5,6 @@ import sys
 
 def main():
 
-    print(sys.argv[1:][0])
-
     img_base = 'input.jpg'
     img_overlay = 'fatcat.jpg'
     img_composite = 'output.jpg'
